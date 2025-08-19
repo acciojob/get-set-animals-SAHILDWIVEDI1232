@@ -13,17 +13,24 @@ console.log("The"+this._species+" makes a sound");}
 class Dog extends Animal {
 	constructor(species){
 super(species);}
-	purr(){
-console.log('purr');}
+	bark(){
+console.log('woof');}
 }
+
 
 class Cat extends Animal {
 constructor(species){
 super(species);}
-	bark(){
-console.log('woof');}
+	purr(){
+console.log('purr');}
 }
+	
 const animal=new Animal("Siamese");
+const myCat=new Cat("Siamese")
+myCat.purr();
+const myDog=new Dog("Golden Retriever");
+myDog.bark();
+
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
